@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #faf8ef;
+    color: #776e65;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.tile {
+    transition: all 0.2s ease-in-out;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    position: absolute;
+}
+
+.grid-cell {
+    background-color: rgba(238, 228, 218, 0.35);
+}
+
+/* Spinner Animation */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #ff8c00;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
